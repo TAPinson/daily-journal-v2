@@ -2,43 +2,74 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 body {
     background-color: rgba(56, 43, 39, 0.486);
 }
 
 main {
-    
     background-color: cyan;
+}
+
+
+.record-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+
+
+.viewer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.viewer {
-    background-color: darkkhaki;
-    padding: 1em;
-    
-    
-    width: 70%;
+.viewer__highlight {
+    border: 1px solid;
 }
 
 .viewer__date {
-    background-color: darkorchid;
+    background-color: darksalmon;
+    padding: 1%;
+    max-width: 15%;
+    border-radius: 12px;
+    margin: 1%;
 }
 
 .viewer__concepts {
-    background-color: darkred;
+    background-color: darksalmon;
+    padding: 1%;
+    max-width: 30%;
+    border-radius: 12px;
+    margin: 1%;
 }
 
 .viewer__journal {
     background-color: darksalmon;
+    padding: 1%;
+    max-width: 70%;
+    border-radius: 12px;
+    margin: 1%;
 }
 
-fieldset {
-    max-width: 20%;
+.form-input {
+    width: 30%;
     
+    
+
 }
+
 
 .form-wrapper {
     border: 1px solid;
     display: flex;
     flex-direction: column;
+    margin: 1%;
+    padding: 2%;
 }

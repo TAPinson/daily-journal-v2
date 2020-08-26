@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Daily Journal</h1>
+        </header>
+        
+        
+        
+        <section class="viewer">
+            <div class="viewer__date">Display Selected Entry Date Here</div>
+            <div class="viewer__concepts">Display Selected Entry Concepts</div>
+            <div class="viewer__journal">Display Selected Entry Journal Here</div>
+        </section>
+
+
+        <form action="">
+            <fieldset>
+                <div class="form-wrapper">
+                    <label for="journalDate">Date of entry</label>
+                    <input type="date" name="journalDate" id="journalDate">
+                </div>
+                <div class="form-wrapper">
+                    <label for="journalConcepts">Concepts covered</label>
+                    <input type="text" name="journalConcepts" id="journalConcepts">
+                </div>
+                <div class="form-wrapper">
+                    <label for="journalEntry">Journal Entry</label>
+                    <textarea name="journalEntry" id="journalEntry"></textarea>
+                </div>
+                <div class="form-wrapper">
+                    <label for="journalMood">Mood for the day</label>
+                    <select name="journalMood" id="journalMood">
+                        <option value="happy">Happy</option>
+                        <option value="ok">Ok</option>
+                        <option value="sad">Sad</option>
+                    </select>
+                </div>
+                <button type="button">Record Journal Entry</button>
+            </fieldset>
+        </form>
+
+
+
+
+
+        <footer>&copy;Travis Pinson 2020</footer>
+    </main>
+    
+</body>
+</html>

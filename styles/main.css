@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgba(56, 43, 39, 0.486);
+}
+
+main {
+    
+    background-color: cyan;
+    
+}
+
+.viewer {
+    background-color: darkkhaki;
+    padding: 1em;
+    
+    
+    width: 70%;
+}
+
+.viewer__date {
+    background-color: darkorchid;
+}
+
+.viewer__concepts {
+    background-color: darkred;
+}
+
+.viewer__journal {
+    background-color: darksalmon;
+}
+
+fieldset {
+    max-width: 20%;
+    
+}
+
+.form-wrapper {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}

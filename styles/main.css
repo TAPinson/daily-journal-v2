@@ -15,6 +15,12 @@ main {
 }
 
 
+.journal-area {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
 .record-view {
     display: flex;
     flex-direction: row;
@@ -24,7 +30,7 @@ main {
 
 
 .viewer {
-    width: 70%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     
@@ -32,28 +38,29 @@ main {
 
 .viewer__highlight {
     border: 1px solid;
+    padding: 1%;
 }
 
 .viewer__date {
     background-color: darksalmon;
-    padding: 1%;
-    max-width: 15%;
+    padding: 2%;
+    max-width: 40%;
     border-radius: 12px;
     margin: 1%;
 }
 
 .viewer__concepts {
     background-color: darksalmon;
-    padding: 1%;
-    max-width: 30%;
+    padding: 2%;
+    max-width: 90%;
     border-radius: 12px;
     margin: 1%;
 }
 
 .viewer__journal {
     background-color: darksalmon;
-    padding: 1%;
-    max-width: 70%;
+    padding: 2%;
+    max-width: 90%;
     border-radius: 12px;
     margin: 1%;
 }
@@ -71,14 +78,16 @@ main {
 }
 
 .history {
-    margin-top: 1%;
+    
+    width: 25%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
 }
 
 .historical-entry {
     border: 1px solid;
     border-radius: 12px;
-    padding: 1%;
-    max-width: 20%;
+    padding: 2%;
+    margin-bottom: 1%;
 }

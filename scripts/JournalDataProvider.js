@@ -35,6 +35,20 @@ const journal = [
         concept: "Git",
         entry: "We learned the basics of git and were put into groups for our group project. I was on the pomelos",
         mood: "Happy"
+    },
+    {
+        id: 5,
+        date: "08/25/2020",
+        concept: "JavaScript array methods",
+        entry: "We learned about some methods to work with arrays. Apparently map is going to be suport important so I should do some more research on it",
+        mood: "Ok"
+    },
+    {
+        id: 6,
+        date: "08/26/2020",
+        concept: "Lab time!!!",
+        entry: "We had a lot of lab time today, which was well needed! I was able to start my Daily Journal project over and make some progress",
+        mood: "Happy"
     }
 ]
 

@@ -65,14 +65,6 @@ main {
     width: 30%;
 }
 
-.form-wrapper {
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    margin: 1%;
-    padding: 2%;
-}
-
 .history {
     width: 25%;
     display: flex;
@@ -86,13 +78,10 @@ main {
     margin-bottom: 1%;
 }
 
-
-
-
-
-
-
-
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
     margin-top: 5%;

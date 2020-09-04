@@ -13,39 +13,48 @@
         </header>
         <section class="journal-area">
            <section class="form-input">
-               <h2>Record Entry</h2>
-
-
+               <h2>Daily Journal</h2>
                <form class="input-form" action="">
                    <fieldset>
+                       <div class="form-wrapper">
                            <label for="journalDate">Date of entry</label>
                            <input type="date" name="journalDate" id="journalDate">
+                        </div>
+                        <div class="form-wrapper">
                             <label for="journalConcepts">Concepts covered</label>
                             <input type="text" name="journalConcepts" id="journalConcepts">
+                        </div>
+                        <div class="form-wrapper">
                             <label for="journalEntry">Journal Entry</label>
                             <textarea name="journalEntry" id="journalEntry"></textarea>
+                        </div>
+                        <div class="form-wrapper">
                             <label for="journalMood">Mood for the day</label>
                             <select name="journalMood" id="journalMood">
                                 <option value="happy">Happy</option>
                                 <option value="ok">Ok</option>
                                 <option value="sad">Sad</option>
                             </select>
-                            <p></p>
+                        </div>
                         <button type="button">Record Journal Entry</button>
                     </fieldset>
                 </form>
-
-
             </section>
             <section class="viewer">
                 <h2>Journal Viewer</h2>
-                <div class="viewer__highlight">Select an entry to view..</div>
+                <div class="viewer__highlight">
+                    <div class="viewer__date">Date Posted: 12/31/2039</div>
+                    <div class="viewer__concepts">Concepts Covered: HTML CSS JavaScript Git</div>
+                    <div class="viewer__journal">Today we learned to do stuff with html and then some more stuff with CSS, and even more with JavaScript. Then we push it all with git!
+                        Today we learned to do stuff with html and then some more stuff with CSS, and even more with JavaScript. Then we push it all with git!
+                        Today we learned to do stuff with html and then some more stuff with CSS, and even more with JavaScript. Then we push it all with git!
+                    </div>
+                </div>
             </section>
-
             <section class="history">
                 <h2>Journal Select</h2>
+                
             </section>
-            
         </section>
         <footer>&copy;Travis Pinson 2020</footer>
         <script type="module" src="scripts/main.js"></script>

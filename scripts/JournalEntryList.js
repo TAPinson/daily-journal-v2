@@ -10,10 +10,11 @@ eventHub.addEventListener('click', event => {
     const entrySelected = event.target.classList.value
     // Only continue if the clicked element was a previous entry from the list
     if (entrySelected === "historical-entry") {
-        console.log(event)
+        const IDOfSelected = event.target.id
         const viewEvent = new CustomEvent("historicalEntrySelected", {
             detail: {
-                activity: entrySelected
+                activity: entrySelected,
+                selected: IDOfSelected
             }
         })
         eventHub.dispatchEvent(viewEvent)
@@ -27,7 +28,7 @@ export const EntryListComponent = () => {
         const entries = useJournalEntries()
         for (const entry of entries) {
             entryLog.innerHTML += `
-            <div class="historical-entry">
+            <div class="historical-entry" id="${entry.id}">
                 ${entry.date}
                 <p></p>
                 ${entry.concept}

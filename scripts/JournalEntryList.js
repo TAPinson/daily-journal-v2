@@ -21,20 +21,27 @@ eventHub.addEventListener('click', event => {
     }
 })
 
+// Listen for a new entry being saved and render the list of entries again so it has the most current data
+eventHub.addEventListener("entryStateChanged", event => {
+    EntryListComponent()
+})
 
+
+// Render the list of historical entries
 export const EntryListComponent = () => {
     getEntries()
     .then(() => {
-        const entries = useJournalEntries()
-        for (const entry of entries) {
-            entryLog.innerHTML += `
+        const allEntries = useJournalEntries()
+        const entries = allEntries.map((entry)=> {
+            return `
             <div class="historical-entry" id="${entry.id}">
                 ${entry.date}
                 <p></p>
                 ${entry.concept}
             </div>
             `
-        }
-
+        })
+        entryLog.innerHTML = ""
+        entryLog.innerHTML += entries.join("")
     })
 }

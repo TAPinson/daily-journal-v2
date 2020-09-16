@@ -1,4 +1,5 @@
 import { EntryListComponent } from './JournalEntryList.js'
-import { JournalWriter } from './CurrentEntry.js'
+import'./CurrentEntry.js'
+import './EntryForm.js'
 
 EntryListComponent();

@@ -1,18 +1,14 @@
 import { getEntries, useJournalEntries } from './JournalDataProvider.js'
 
-
 const contentTarget = document.querySelector(".viewer__highlight")
 const eventHub = document.querySelector("main")
 
 eventHub.addEventListener("historicalEntrySelected", customEvent => {
     const IDOfSelected = customEvent.detail.selected
-    getEntries()
-    .then(() => {
-        const entries = useJournalEntries()
-        const entryFinder = entries.filter(entry => entry.id == IDOfSelected)
-        const matchingEntry = entryFinder[0]
-        JournalWriter(matchingEntry)
-    })
+    const entries = useJournalEntries()
+    const entryFinder = entries.filter(entry => entry.id === parseInt(IDOfSelected))
+    const matchingEntry = entryFinder[0]
+    JournalWriter(matchingEntry)
 })
 
 

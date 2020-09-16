@@ -41,7 +41,6 @@ main {
     background-color: darksalmon;
     padding: 2%;
     max-width: 40%;
-    border-radius: 12px;
     margin: 1%;
 }
 
@@ -49,7 +48,6 @@ main {
     background-color: darksalmon;
     padding: 2%;
     max-width: 90%;
-    border-radius: 12px;
     margin: 1%;
 }
 
@@ -57,7 +55,13 @@ main {
     background-color: darksalmon;
     padding: 2%;
     max-width: 90%;
-    border-radius: 12px;
+    margin: 1%;
+}
+
+.viewer__mood {
+    background-color: darksalmon;
+    padding: 2%;
+    max-width: 40%;
     margin: 1%;
 }
 
@@ -73,7 +77,7 @@ main {
 
 .historical-entry {
     border: 1px solid;
-    border-radius: 12px;
+
     padding: 2%;
     margin-bottom: 1%;
 }

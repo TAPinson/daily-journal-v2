@@ -42,6 +42,6 @@ export const EntryListComponent = () => {
             `
         })
         entryLog.innerHTML = ""
-        entryLog.innerHTML += entries.join("")
+        entryLog.innerHTML += `<h2> Entries </h2>` + entries.join("")
     })
 }

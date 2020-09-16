@@ -16,6 +16,7 @@ export const JournalWriter = (entry) => {
     contentTarget.innerHTML = ""
     contentTarget.innerHTML += `
         <div class="viewer__date">Date Posted: ${entry.date}</div>
+        <div class="viewer__mood">Mood: ${entry.mood}</div>
         <div class="viewer__concepts">Concepts Covered: ${entry.concept}</div>
         <div class="viewer__journal">${entry.entry}</div>
     `

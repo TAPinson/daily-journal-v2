@@ -15,22 +15,15 @@
            <section class="form-input">
                <h2>Record Entry</h2>
                <form class="input-form">
-                   <fieldset>
-                           <label for="journalDate">Date of entry</label>
-                           <input type="date" name="journalDate" id="journalDate">
-                            <label for="journalConcepts">Concepts covered</label>
-                            <input type="text" name="journalConcepts" id="journalConcepts">
-                            <label for="journalEntry">Journal Entry</label>
-                            <textarea name="journalEntry" id="journalEntry"></textarea>
-                            <label for="journalMood">Mood for the day</label>
-                            <select name="journalMood" id="journalMood">
-                                <option value="happy">Happy</option>
-                                <option value="ok">Ok</option>
-                                <option value="sad">Sad</option>
-                            </select>
-                            <p></p>
-                        <button type="button" id="recordEntry">Record Journal Entry</button>
-                    </fieldset>
+                   <input type="date" id="journalDate">
+                    <input type="text" id="journalConcepts" placeholder="Concepts Covered...">
+                    <textarea id="journalEntry" placeholder="Entry..."></textarea>
+                    <select name="journalMood" id="journalMood">
+                        <option value="happy">Happy</option>
+                        <option value="ok">Ok</option>
+                        <option value="sad">Sad</option>
+                    </select>
+                    <button type="button" id="recordEntry">Record Journal Entry</button>
                 </form>
             </section>
             <section class="viewer">

@@ -82,9 +82,27 @@ main {
     margin-bottom: 1%;
 }
 
-fieldset {
+.input-form {
     display: flex;
     flex-direction: column;
+    border: 1px solid;
+    padding: 1em;
+}
+
+#journalDate {
+    margin-bottom: 1em;
+}
+
+#journalConcepts {
+    margin-bottom: 1em;
+}
+
+#journalEntry {
+    margin-bottom: 1em;
+}
+
+#journalMood {
+    margin-bottom: 1em;
 }
 
 footer {

@@ -8,10 +8,12 @@ h2 {
 
 body {
     background-color: rgba(56, 43, 39, 0.486);
+
 }
 
 main {
     background-color: cyan;
+
 }
 
 .journal-area {
@@ -79,6 +81,10 @@ main {
     border: 1px solid;
     padding: 2%;
     margin-bottom: 1%;
+}
+
+.deleteButton {
+    float: right;
 }
 
 .input-form {

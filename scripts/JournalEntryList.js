@@ -1,5 +1,5 @@
 // Render list of all entries
-import { useJournalEntries, getEntries } from "./JournalDataProvider.js"
+import { useJournalEntries, getEntries, deleteEntry } from "./JournalDataProvider.js"
 
 const eventHub = document.querySelector("main")
 const entryLog = document.querySelector(".history")
@@ -27,6 +27,30 @@ eventHub.addEventListener("entryStateChanged", event => {
 })
 
 
+
+
+
+
+eventHub.addEventListener("click", event => {
+    const buttonCheck = event.target.classList.value
+    if (buttonCheck === "deleteButton"){
+        const elementID = event.target.id
+        const [prefix, selectedID] = elementID.split("-")
+        deleteEntry(selectedID)
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
 // Render the list of historical entries
 export const EntryListComponent = () => {
     getEntries()
@@ -38,6 +62,7 @@ export const EntryListComponent = () => {
                 ${entry.date}
                 <p></p>
                 ${entry.concept}
+                <button class="deleteButton" id="delete-${entry.id}">Delete</button>
             </div>
             `
         })

@@ -1,3 +1,4 @@
+import {EntryListComponent} from './JournalEntryList.js'
 
 // Hold entries after they are retrieved and sorted into new array
 let journal = []
@@ -42,4 +43,18 @@ export const saveEntry = entry => {
     })
     .then(getEntries)
     .then(dispatchStateChangeEvent)
+}
+
+
+export const deleteEntry = entryID => {
+    console.log(entryID)
+
+    return fetch(`http://localhost:8088/entries/${entryID}`, {
+        method: "DELETE"
+    })
+
+    .then(() => {
+        EntryListComponent()
+    })
+
 }

@@ -27,10 +27,6 @@ eventHub.addEventListener("entryStateChanged", event => {
 })
 
 
-
-
-
-
 eventHub.addEventListener("click", event => {
     const buttonCheck = event.target.classList.value
     if (buttonCheck === "deleteButton"){
@@ -39,16 +35,6 @@ eventHub.addEventListener("click", event => {
         deleteEntry(selectedID)
     }
 })
-
-
-
-
-
-
-
-
-
-
 
 
 // Render the list of historical entries

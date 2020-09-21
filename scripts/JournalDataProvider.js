@@ -47,14 +47,8 @@ export const saveEntry = entry => {
 
 
 export const deleteEntry = entryID => {
-    console.log(entryID)
-
     return fetch(`http://localhost:8088/entries/${entryID}`, {
         method: "DELETE"
     })
-
-    .then(() => {
-        EntryListComponent()
-    })
-
+    .then(dispatchStateChangeEvent)
 }

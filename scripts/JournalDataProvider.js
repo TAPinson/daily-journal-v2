@@ -26,7 +26,6 @@ export const useJournalEntries = () => {
 // Update an entry
 export const editEntry = entry => {
     const contentClear = document.querySelector(".viewer_edit")
-    console.log(entry)
     return fetch(`http://localhost:8088/entries/${entry.id}`, {
     method: "PUT",
     headers: {

@@ -22,9 +22,6 @@ eventHub.addEventListener('click', event => {
 })
 
 
-
-
-
 // Listen for a new entry being saved and render the list of entries again so it has the most current data
 eventHub.addEventListener("entryStateChanged", event => {
     EntryListComponent()

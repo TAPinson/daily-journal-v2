@@ -20,9 +20,13 @@ eventHub.addEventListener("historicalEntrySelected", customEvent => {
 eventHub.addEventListener("click", event => {
     const buttonCheck = event.target.classList.value
     if (buttonCheck === "deleteButton"){
-        const elementID = event.target.id
-        const [prefix, selectedID] = elementID.split("-")
-        deleteEntry(selectedID)
+        // Ensure delete click was intentional and only continue if user confirms
+        let doubleCheck = confirm("Are you sure you want to delete this entry? It cannot be undone.")
+        if (doubleCheck === true) {
+            const elementID = event.target.id
+            const [prefix, selectedID] = elementID.split("-")
+            deleteEntry(selectedID)
+        }
     }
 })
 
@@ -43,7 +47,6 @@ eventHub.addEventListener("click", event => {
             const concept = document.querySelector(".edit-concepts").value
             const entry = document.querySelector(".edit-entry").value
             const mood = document.querySelector(".edit-mood").value
-
             const updatedEntry = {
                 id,
                 date,
@@ -92,7 +95,7 @@ const editPrep = id => {
     ` 
 }
 
-
+// Render the selected entry to the journal viewer
 export const JournalWriter = (entry) => {
     contentTarget.innerHTML = ""
     contentTarget.innerHTML += `

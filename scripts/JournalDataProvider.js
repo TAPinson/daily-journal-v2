@@ -1,4 +1,5 @@
 import {EntryListComponent} from './JournalEntryList.js'
+import {JournalWriter} from './CurrentEntry.js'
 
 // Hold entries after they are retrieved and sorted into new array
 let journal = []
@@ -20,6 +21,29 @@ export const useJournalEntries = () => {
     )
     return sortedByDate
 }
+
+
+// Update an entry
+export const editEntry = entry => {
+    const contentClear = document.querySelector(".viewer_edit")
+    console.log(entry)
+    return fetch(`http://localhost:8088/entries/${entry.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(entry)
+  })
+  .then(getEntries)
+    .then(dispatchStateChangeEvent)
+    .then(() => {
+        contentClear.innerHTML = ""
+        JournalWriter(entry)
+    })
+
+}
+
+
 
 
 // Fetch the entries from the json server

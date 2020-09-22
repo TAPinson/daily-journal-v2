@@ -1,4 +1,4 @@
-import { getEntries, useJournalEntries } from './JournalDataProvider.js'
+import { getEntries, useJournalEntries, editEntry } from './JournalDataProvider.js'
 
 const contentTarget = document.querySelector(".viewer__highlight")
 const eventHub = document.querySelector("main")
@@ -16,11 +16,13 @@ eventHub.addEventListener("historicalEntrySelected", customEvent => {
 
 eventHub.addEventListener("click", event => {
     const clickTarget = event.target.classList.value
+    // If they click the edit button
     if (clickTarget === "editButton"){
         const [prefix, id] = event.target.id.split("-")
         editPrep(id)
     }
     else {
+        // If they click the edit save button
         if (clickTarget === "edit-save") {
             const [prefix, id] = event.target.id.split("-")
             const date = document.querySelector(".editDate").value
@@ -35,9 +37,10 @@ eventHub.addEventListener("click", event => {
                 entry,
                 mood
             }
-            console.log("updated entry:",updatedEntry)
+            editEntry(updatedEntry)
         }
         else {
+            // If they click the edit cancel button
             if (clickTarget === "edit-cancel") {
                 const contentTarget = document.querySelector(".viewer_edit")
                 contentTarget.innerHTML = ""

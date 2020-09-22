@@ -17,8 +17,26 @@ eventHub.addEventListener("historicalEntrySelected", customEvent => {
 eventHub.addEventListener("click", event => {
     const clickTarget = event.target.classList.value
     if (clickTarget === "editButton"){
-        const [ prefix, id] = event.target.id.split("-")
+        const [prefix, id] = event.target.id.split("-")
         editPrep(id)
+    }
+    else {
+        if (clickTarget === "edit-save") {
+            const [prefix, id] = event.target.id.split("-")
+            const date = document.querySelector(".editDate").value
+            const concept = document.querySelector(".edit-concepts").value
+            const entry = document.querySelector(".edit-entry").value
+            const mood = document.querySelector(".edit-mood").value
+
+            const updatedEntry = {
+                id,
+                date,
+                concept,
+                entry,
+                mood
+            }
+            console.log("updated entry:",updatedEntry)
+        }
     }
 })
 
@@ -35,7 +53,7 @@ const editPrep = id => {
     contentTarget.innerHTML += `
     <h2> Edit Entry </h2>
     <section class="editArea">
-        <input type="date" value="${dateString}">
+        <input type="date" class="editDate" value="${dateString}">
         <select class="edit-mood">
             <option value="${entry.mood}">${entry.mood}</option>
             <option value="happy">Happy</option>
@@ -44,9 +62,8 @@ const editPrep = id => {
         </select><br>
         <input type="text" class="edit-concepts" value= "${entry.concept}"><br>
         <textarea class="edit-entry" rows="6">${entry.entry}</textarea><br>
-        <button class="edit-save">Save</button>
-        
-    </section
+        <button class="edit-save" id="editSave-${entry.id}">Save</button>
+    </section>
     ` 
 }
 

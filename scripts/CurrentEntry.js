@@ -1,8 +1,10 @@
-import { getEntries, useJournalEntries, editEntry } from './JournalDataProvider.js'
+import { getEntries, useJournalEntries, editEntry, deleteEntry } from './JournalDataProvider.js'
 
 const contentTarget = document.querySelector(".viewer__highlight")
 const eventHub = document.querySelector("main")
 
+
+// Listener for entry selected for display from list
 eventHub.addEventListener("historicalEntrySelected", customEvent => {
     const clearTarget = document.querySelector(".viewer_edit")
     clearTarget.innerHTML = ""
@@ -14,6 +16,18 @@ eventHub.addEventListener("historicalEntrySelected", customEvent => {
 })
 
 
+// Listener for delete related events
+eventHub.addEventListener("click", event => {
+    const buttonCheck = event.target.classList.value
+    if (buttonCheck === "deleteButton"){
+        const elementID = event.target.id
+        const [prefix, selectedID] = elementID.split("-")
+        deleteEntry(selectedID)
+    }
+})
+
+
+// Listener for edit related clicks
 eventHub.addEventListener("click", event => {
     const clickTarget = event.target.classList.value
     // If they click the edit button
@@ -50,6 +64,7 @@ eventHub.addEventListener("click", event => {
 })
 
 
+// Take the selected entry and display an area to update each attribute
 const editPrep = id => {
     const entries = useJournalEntries()
     const entry = entries.find((selection) => {
@@ -86,5 +101,6 @@ export const JournalWriter = (entry) => {
         <div class="viewer__concepts">Concepts Covered: ${entry.concept}</div>
         <div class="viewer__journal">${entry.entry}</div>
         <button class="editButton" id="edit-${entry.id}">Edit</button>
+        <button class="deleteButton" id="delete-${entry.id}">Delete</button>
     `
 }

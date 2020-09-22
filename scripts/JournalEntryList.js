@@ -22,14 +22,7 @@ eventHub.addEventListener('click', event => {
 })
 
 
-eventHub.addEventListener("click", event => {
-    const buttonCheck = event.target.classList.value
-    if (buttonCheck === "deleteButton"){
-        const elementID = event.target.id
-        const [prefix, selectedID] = elementID.split("-")
-        deleteEntry(selectedID)
-    }
-})
+
 
 
 // Listen for a new entry being saved and render the list of entries again so it has the most current data
@@ -49,7 +42,6 @@ export const EntryListComponent = () => {
                 ${entry.date}
                 <p></p>
                 ${entry.concept}
-                <button class="deleteButton" id="delete-${entry.id}">Delete</button>
             </div>
             `
         })

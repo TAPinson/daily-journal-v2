@@ -40,10 +40,7 @@ export const editEntry = entry => {
         contentClear.innerHTML = ""
         JournalWriter(entry)
     })
-
 }
-
-
 
 
 // Fetch the entries from the json server
@@ -71,6 +68,12 @@ export const saveEntry = entry => {
 
 
 export const deleteEntry = entryID => {
+
+    const isEntrySelected = document.querySelector(`#edit-${entryID}`)
+    if (isEntrySelected) {
+        const contentClear = document.querySelector(".viewer__highlight")
+        contentClear.innerHTML = "Select an entry to view.."
+    }
     return fetch(`http://localhost:8088/entries/${entryID}`, {
         method: "DELETE"
     })

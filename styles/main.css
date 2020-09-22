@@ -10,9 +10,6 @@ body {
     background-color: cyan;
 }
 
-
-
-
 .journal-area {
     display: flex;
     flex-wrap: nowrap;
@@ -96,12 +93,9 @@ body {
     display: flex;
     flex-direction: column;
     
-
-    
 }
 
 .historyScroll {
-    
     max-height: 43em;
     overflow-y:auto;
     padding: 0.5em 0em 0em 1em;

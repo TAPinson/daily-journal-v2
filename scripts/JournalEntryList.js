@@ -32,7 +32,9 @@ eventHub.addEventListener("entryStateChanged", event => {
 export const EntryListComponent = () => {
     getEntries()
     .then(() => {
-        const allEntries = useJournalEntries()
+        const allEntriesBackwards = useJournalEntries()
+        // Reverse the entries in the array to display the newest entries at the top of the list
+        const allEntries = allEntriesBackwards.reverse()
         const entries = allEntries.map((entry)=> {
             return `
             <div class="historical-entry" id="${entry.id}">

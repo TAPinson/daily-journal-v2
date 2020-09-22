@@ -1,4 +1,3 @@
-import {EntryListComponent} from './JournalEntryList.js'
 import {JournalWriter} from './CurrentEntry.js'
 
 // Hold entries after they are retrieved and sorted into new array

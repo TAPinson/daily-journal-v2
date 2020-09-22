@@ -34,28 +34,28 @@ body {
 }
 
 .viewer__date {
-    background-color: darksalmon;
+    background-color: #527a7a;
     padding: 2%;
     max-width: 40%;
     margin: 1%;
 }
 
 .viewer__concepts {
-    background-color: darksalmon;
+    background-color: #527a7a;
     padding: 2%;
     max-width: 90%;
     margin: 1%;
 }
 
 .viewer__journal {
-    background-color: darksalmon;
+    background-color: #527a7a;
     padding: 2%;
     max-width: 90%;
     margin: 1%;
 }
 
 .viewer__mood {
-    background-color: darksalmon;
+    background-color: #527a7a;
     padding: 2%;
     max-width: 40%;
     margin: 1%;
@@ -106,6 +106,7 @@ body {
     border: 1px solid;
     padding: 2%;
     margin-bottom: 1%;
+    background-color: #66ffcc;
 }
 
 .deleteButton {

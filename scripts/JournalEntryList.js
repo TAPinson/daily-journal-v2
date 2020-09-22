@@ -2,7 +2,7 @@
 import { useJournalEntries, getEntries, deleteEntry } from "./JournalDataProvider.js"
 
 const eventHub = document.querySelector("main")
-const entryLog = document.querySelector(".history")
+const entryLog = document.querySelector(".historyScroll")
 
 // Listen for the Food Ticket button to be clicked
 eventHub.addEventListener('click', event => {
@@ -43,6 +43,6 @@ export const EntryListComponent = () => {
             `
         })
         entryLog.innerHTML = ""
-        entryLog.innerHTML += `<h2> Entries </h2>` + entries.join("")
+        entryLog.innerHTML += entries.join("")
     })
 }

@@ -1,20 +1,17 @@
-h1 {
+h1, h2 {
     text-align: center;
 }
 
-h2 {
-    text-align: center;
+.viewer-title {
+    margin-right: 3.5em;
 }
 
 body {
-    background-color: rgba(56, 43, 39, 0.486);
-
-}
-
-main {
     background-color: cyan;
-
 }
+
+
+
 
 .journal-area {
     display: flex;
@@ -98,6 +95,17 @@ main {
     width: 25%;
     display: flex;
     flex-direction: column;
+    
+
+    
+}
+
+.historyScroll {
+    
+    max-height: 43em;
+    overflow-y:auto;
+    padding: 0.5em 0em 0em 1em;
+
 }
 
 .historical-entry {

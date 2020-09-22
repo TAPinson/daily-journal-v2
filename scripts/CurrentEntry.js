@@ -37,6 +37,12 @@ eventHub.addEventListener("click", event => {
             }
             console.log("updated entry:",updatedEntry)
         }
+        else {
+            if (clickTarget === "edit-cancel") {
+                const contentTarget = document.querySelector(".viewer_edit")
+                contentTarget.innerHTML = ""
+            }
+        }
     }
 })
 
@@ -63,6 +69,7 @@ const editPrep = id => {
         <input type="text" class="edit-concepts" value= "${entry.concept}"><br>
         <textarea class="edit-entry" rows="6">${entry.entry}</textarea><br>
         <button class="edit-save" id="editSave-${entry.id}">Save</button>
+        <button class="edit-cancel" id="editCancel-${entry.id}">Cancel</button>
     </section>
     ` 
 }

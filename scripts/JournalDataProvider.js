@@ -66,7 +66,6 @@ export const saveEntry = entry => {
 
 
 export const deleteEntry = entryID => {
-
     const isEntrySelected = document.querySelector(`#edit-${entryID}`)
     if (isEntrySelected) {
         const contentClear = document.querySelector(".viewer__highlight")

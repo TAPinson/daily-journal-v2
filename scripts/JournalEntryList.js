@@ -1,5 +1,5 @@
 // Render list of all entries
-import { useJournalEntries, getEntries, deleteEntry } from "./JournalDataProvider.js"
+import { useJournalEntries, getEntries } from "./JournalDataProvider.js"
 
 const eventHub = document.querySelector("main")
 const entryLog = document.querySelector(".historyScroll")

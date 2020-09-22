@@ -1,4 +1,5 @@
-import { getEntries, useJournalEntries, editEntry, deleteEntry } from './JournalDataProvider.js'
+import { useJournalEntries, editEntry, deleteEntry } from './JournalDataProvider.js'
+import { editWrite } from './ViewerWriters.js'
 
 const contentTarget = document.querySelector(".viewer__highlight")
 const eventHub = document.querySelector("main")
@@ -77,22 +78,7 @@ const editPrep = id => {
     const dateString = year + "-" + month + "-" + day
     const contentTarget = document.querySelector(".viewer_edit")
     contentTarget.innerHTML = ""
-    contentTarget.innerHTML += `
-    <h2> Edit Entry </h2>
-    <section class="editArea">
-        <input type="date" class="editDate" value="${dateString}">
-        <select class="edit-mood">
-            <option value="${entry.mood}">${entry.mood}</option>
-            <option value="happy">Happy</option>
-            <option value="ok">Ok</option>
-            <option value="sad">Sad</option>
-        </select><br>
-        <input type="text" class="edit-concepts" value= "${entry.concept}"><br>
-        <textarea class="edit-entry" rows="6">${entry.entry}</textarea><br>
-        <button class="edit-save" id="editSave-${entry.id}">Save</button>
-        <button class="edit-cancel" id="editCancel-${entry.id}">Cancel</button>
-    </section>
-    ` 
+    contentTarget.innerHTML += editWrite(entry, dateString)
 }
 
 // Render the selected entry to the journal viewer

@@ -21,11 +21,6 @@ eventHub.addEventListener('click', event => {
     }
 })
 
-// Listen for a new entry being saved and render the list of entries again so it has the most current data
-eventHub.addEventListener("entryStateChanged", event => {
-    EntryListComponent()
-})
-
 
 eventHub.addEventListener("click", event => {
     const buttonCheck = event.target.classList.value
@@ -34,6 +29,12 @@ eventHub.addEventListener("click", event => {
         const [prefix, selectedID] = elementID.split("-")
         deleteEntry(selectedID)
     }
+})
+
+
+// Listen for a new entry being saved and render the list of entries again so it has the most current data
+eventHub.addEventListener("entryStateChanged", event => {
+    EntryListComponent()
 })
 
 

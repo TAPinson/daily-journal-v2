@@ -1,50 +1,43 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "07/24/2020",
-      "concept": "HTML & CSS",
-      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "mood": "Ok"
-    },
-    {
       "id": 2,
-      "date": "08/10/2020",
+      "date": "2020-08-10",
       "concept": "Bash",
       "entry": "We talked about some basic bash commands for terminal.",
       "mood": "Happy"
     },
     {
       "id": 3,
-      "date": "08/12/2020",
+      "date": "2020-08-12",
       "concept": "Networking",
       "entry": "Met big sibling Connor. He gave me a heads up to be sure to pay attention closely to GIT",
       "mood": "Happy"
     },
     {
       "id": 4,
-      "date": "08/13/2020",
+      "date": "2020-08-13",
       "concept": "Git",
       "entry": "We learned the basics of git and were put into groups for our group project. I was on the pomelos",
       "mood": "Happy"
     },
     {
       "id": 5,
-      "date": "08/25/2020",
+      "date": "2020-08-25",
       "concept": "JavaScript array methods",
       "entry": "We learned about some methods to work with arrays. Apparently map is going to be suport important so I should do some more research on it",
       "mood": "Ok"
     },
     {
       "id": 6,
-      "date": "08/26/2020",
+      "date": "2020-08-26",
       "concept": "Lab time!!!",
       "entry": "We had a lot of lab time today, which was well needed! I was able to start my Daily Journal project over and make some progress",
       "mood": "Happy"
     },
     {
       "id": 7,
-      "date": "08/27/2020",
+      "date": "2020-08-27",
       "concept": "JavaScript",
       "entry": "We worked on a project that was all about working with arrays and representing them on the DOM",
       "mood": "Ok"
@@ -62,6 +55,20 @@
       "entry": "Today we worked on our understanding of ERDs and looked at some json-server api call methods. Then, we looked at the way Brenda laid out her Lego project to see how that all worked!",
       "mood": "happy",
       "id": 9
+    },
+    {
+      "date": "2020-09-21",
+      "concept": "Deleting posts",
+      "entry": "Today, I was able to add the ability to delete entries to my Daily Journal project. Since I had done this before, it was super easy and only took about 20 minutes. Hooray!",
+      "mood": "happy",
+      "id": 10
+    },
+    {
+      "date": "2020-09-22",
+      "concept": "Edit",
+      "entry": "Today Brenda showed us how the update portion of CRUD!",
+      "mood": "ok",
+      "id": 11
     }
   ]
 }

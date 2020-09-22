@@ -67,6 +67,29 @@ main {
     margin: 1%;
 }
 
+.editButton {
+    float: right;
+}
+
+.editArea {
+    margin-top: 1em;
+    border: 1px solid;
+    padding: 1em;
+}
+
+.edit-entry {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.edit-concepts {
+    margin-top: 1em;
+}
+
+.edit-mood {
+    margin-top: 1em;
+}
+
 .form-input {
     width: 30%;
 }

@@ -71,18 +71,39 @@
       "id": 11
     },
     {
-      "id": 13,
-      "date": "2020-10-01",
-      "concept": "22222222222",
-      "entry": "444444444444444444444",
-      "mood": "happy"
+      "date": "2020-09-30",
+      "concept": "Group Project Demos!!!",
+      "entry": "Today we demonstrated our Nutshell group project, which was a social networking site we build with three other team members. Crazy how far we've come in 8 weeks!!!!!!",
+      "mood": "happy",
+      "id": 12
     },
     {
       "date": "2020-10-01",
-      "concept": "7777777777",
-      "entry": "7777777777",
-      "mood": "sad",
+      "concept": "Lab time / Array Methods",
+      "entry": "During lab time today, I completed a task that was to create a variety of functions using different array methods to give an expected return. I completed the assignment and the advanced challenge without having to use any 'for' loops in the process!",
+      "mood": "happy",
+      "id": 13
+    },
+    {
+      "date": "2020-10-02",
+      "concept": "dwdwdwd",
+      "entry": "wdwdwdwdwd",
+      "mood": "happy",
       "id": 14
+    },
+    {
+      "date": "2020-10-02",
+      "concept": "dwdwdwd",
+      "entry": "dwdwdwdwdw",
+      "mood": "happy",
+      "id": 15
+    },
+    {
+      "date": "2020-10-03",
+      "concept": "dwdwdw",
+      "entry": "dwdwdwdwdw",
+      "mood": "happy",
+      "id": 16
     }
   ]
 }

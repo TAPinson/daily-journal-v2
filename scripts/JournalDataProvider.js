@@ -35,15 +35,20 @@ export const editEntry = entry => {
   .then(getEntries)
     .then(dispatchStateChangeEvent)
     .then(() => {
+        const entries = useJournalEntries()
+
+        const editedEntry = entries.find((thisEntry) => {
+            return thisEntry.id === parseInt(entry.id)
+        })
         contentClear.innerHTML = ""
-        JournalWriter(entry)
+        JournalWriter(editedEntry)
     })
 }
 
 
 // Fetch the entries from the json server
 export const getEntries = () => {
-    return fetch("http://localhost:8088/entries")
+    return fetch("http://localhost:8088/entries?_expand=mood")
         .then(response => response.json())  
         .then(entries => {
             journal = entries

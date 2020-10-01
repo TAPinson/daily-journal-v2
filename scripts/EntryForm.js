@@ -14,7 +14,7 @@ eventHub.addEventListener("click", event => {
                 date: entryDate,
                 concept: entryConcepts,
                 entry: entryEntry,
-                mood: entryMood
+                moodId: parseInt(entryMood)
             }
             saveEntry(entry)
             formWriter()
@@ -33,9 +33,9 @@ export const formWriter = () => {
     <input type="text" id="journalConcepts" placeholder="Concepts Covered...">
     <textarea id="journalEntry" rows="6" placeholder="Entry..."></textarea>
     <select name="journalMood" id="journalMood">
-        <option value="happy">Happy</option>
-        <option value="ok">Ok</option>
-        <option value="sad">Sad</option>
+        <option value="1">Happy</option>
+        <option value="2">Ok</option>
+        <option value="3">Sad</option>
     </select>
     <button type="button" id="recordEntry">Record Journal Entry</button>
     `

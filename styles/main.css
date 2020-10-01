@@ -96,7 +96,7 @@ body {
 }
 
 .historyScroll {
-    max-height: 43em;
+    max-height: 34em;
     overflow-y:auto;
     padding: 0.5em 0em 0em 1em;
 
@@ -107,6 +107,11 @@ body {
     padding: 2%;
     margin-bottom: 1%;
     background-color: #66ffcc;
+}
+
+#radioMoodSelect {
+    float: right;
+    margin-right: 10%;
 }
 
 .deleteButton {

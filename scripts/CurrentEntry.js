@@ -47,13 +47,13 @@ eventHub.addEventListener("click", event => {
             const date = document.querySelector(".editDate").value
             const concept = document.querySelector(".edit-concepts").value
             const entry = document.querySelector(".edit-entry").value
-            const mood = document.querySelector(".edit-mood").value
+            const moodId = parseInt(document.querySelector(".edit-mood").value)
             const updatedEntry = {
                 id,
                 date,
                 concept,
                 entry,
-                mood
+                moodId,
             }
             editEntry(updatedEntry)
         }
@@ -86,7 +86,7 @@ export const JournalWriter = (entry) => {
     contentTarget.innerHTML = ""
     contentTarget.innerHTML += `
         <div class="viewer__date">Date Posted: ${entry.date}</div>
-        <div class="viewer__mood">Mood: ${entry.mood}</div>
+        <div class="viewer__mood">Mood: ${entry.mood.label}</div>
         <div class="viewer__concepts">Concepts Covered: ${entry.concept}</div>
         <div class="viewer__journal">${entry.entry}</div>
         <button class="editButton" id="edit-${entry.id}">Edit</button>

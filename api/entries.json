@@ -5,105 +5,105 @@
       "date": "2020-08-10",
       "concept": "Bash",
       "entry": "We talked about some basic bash commands for terminal.",
-      "mood": "Happy"
+      "moodId": 1
     },
     {
       "id": 3,
       "date": "2020-08-12",
       "concept": "Networking",
       "entry": "Met big sibling Connor. He gave me a heads up to be sure to pay attention closely to GIT",
-      "mood": "Happy"
+      "moodId": 1
     },
     {
       "id": 4,
       "date": "2020-08-13",
       "concept": "Git",
       "entry": "We learned the basics of git and were put into groups for our group project. I was on the pomelos",
-      "mood": "Happy"
+      "moodId": 1
     },
     {
       "id": 5,
       "date": "2020-08-25",
       "concept": "JavaScript array methods",
       "entry": "We learned about some methods to work with arrays. Apparently map is going to be suport important so I should do some more research on it",
-      "mood": "Ok"
+      "moodId": 2
     },
     {
       "id": 6,
       "date": "2020-08-26",
       "concept": "Lab time!!!",
       "entry": "We had a lot of lab time today, which was well needed! I was able to start my Daily Journal project over and make some progress",
-      "mood": "Happy"
+      "moodId": 1
     },
     {
       "id": 7,
       "date": "2020-08-27",
       "concept": "JavaScript",
       "entry": "We worked on a project that was all about working with arrays and representing them on the DOM",
-      "mood": "Ok"
+      "moodId": 2
     },
     {
       "date": "2020-09-16",
       "concept": "Databases, Entity Relationship Diagrams",
       "entry": "Today we were introduced to databases and the impotance of entity relationship diagrams",
-      "mood": "happy",
-      "id": 8
+      "mood": 1,
+      "moodId": 8
     },
     {
       "date": "2020-09-21",
       "concept": "Databases ERD",
       "entry": "Today we worked on our understanding of ERDs and looked at some json-server api call methods. Then, we looked at the way Brenda laid out her Lego project to see how that all worked!",
-      "mood": "happy",
-      "id": 9
+      "mood": 1,
+      "moodId": 9
     },
     {
       "date": "2020-09-21",
       "concept": "Deleting posts",
       "entry": "Today, I was able to add the ability to delete entries to my Daily Journal project. Since I had done this before, it was super easy and only took about 20 minutes. Hooray!",
-      "mood": "happy",
-      "id": 10
+      "mood": 1,
+      "moodId": 10
     },
     {
       "date": "2020-09-22",
       "concept": "Edit",
       "entry": "Today Brenda showed us how the update portion of CRUD!",
-      "mood": "ok",
-      "id": 11
+      "mood": 2,
+      "moodId": 11
     },
     {
       "date": "2020-09-30",
       "concept": "Group Project Demos!!!",
       "entry": "Today we demonstrated our Nutshell group project, which was a social networking site we build with three other team members. Crazy how far we've come in 8 weeks!!!!!!",
-      "mood": "happy",
-      "id": 12
+      "mood": 1,
+      "moodId": 12
     },
     {
       "date": "2020-10-01",
       "concept": "Lab time / Array Methods",
       "entry": "During lab time today, I completed a task that was to create a variety of functions using different array methods to give an expected return. I completed the assignment and the advanced challenge without having to use any 'for' loops in the process!",
-      "mood": "happy",
+      "moodId": 1,
       "id": 13
     },
     {
+      "id": 14,
       "date": "2020-10-02",
-      "concept": "dwdwdwd",
-      "entry": "wdwdwdwdwd",
-      "mood": "happy",
-      "id": 14
+      "concept": "111111111",
+      "entry": "11111111111111111",
+      "moodId": 1
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Happy"
     },
     {
-      "date": "2020-10-02",
-      "concept": "dwdwdwd",
-      "entry": "dwdwdwdwdw",
-      "mood": "happy",
-      "id": 15
+      "id": 2,
+      "label": "Ok"
     },
     {
-      "date": "2020-10-03",
-      "concept": "dwdwdw",
-      "entry": "dwdwdwdwdw",
-      "mood": "happy",
-      "id": 16
+      "id": 3,
+      "label": "Sad"
     }
   ]
 }

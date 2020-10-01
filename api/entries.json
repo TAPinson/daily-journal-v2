@@ -46,36 +46,36 @@
       "date": "2020-09-16",
       "concept": "Databases, Entity Relationship Diagrams",
       "entry": "Today we were introduced to databases and the impotance of entity relationship diagrams",
-      "mood": 1,
-      "moodId": 8
+      "moodId": 1,
+      "id": 8
     },
     {
       "date": "2020-09-21",
       "concept": "Databases ERD",
       "entry": "Today we worked on our understanding of ERDs and looked at some json-server api call methods. Then, we looked at the way Brenda laid out her Lego project to see how that all worked!",
-      "mood": 1,
-      "moodId": 9
+      "moodId": 1,
+      "id": 9
     },
     {
       "date": "2020-09-21",
       "concept": "Deleting posts",
       "entry": "Today, I was able to add the ability to delete entries to my Daily Journal project. Since I had done this before, it was super easy and only took about 20 minutes. Hooray!",
-      "mood": 1,
-      "moodId": 10
+      "moodId": 1,
+      "id": 10
     },
     {
       "date": "2020-09-22",
       "concept": "Edit",
       "entry": "Today Brenda showed us how the update portion of CRUD!",
-      "mood": 2,
-      "moodId": 11
+      "moodId": 2,
+      "id": 11
     },
     {
       "date": "2020-09-30",
       "concept": "Group Project Demos!!!",
       "entry": "Today we demonstrated our Nutshell group project, which was a social networking site we build with three other team members. Crazy how far we've come in 8 weeks!!!!!!",
-      "mood": 1,
-      "moodId": 12
+      "moodId": 1,
+      "id": 12
     },
     {
       "date": "2020-10-01",
@@ -83,13 +83,6 @@
       "entry": "During lab time today, I completed a task that was to create a variety of functions using different array methods to give an expected return. I completed the assignment and the advanced challenge without having to use any 'for' loops in the process!",
       "moodId": 1,
       "id": 13
-    },
-    {
-      "id": 14,
-      "date": "2020-10-02",
-      "concept": "111111111",
-      "entry": "11111111111111111",
-      "moodId": 1
     }
   ],
   "moods": [

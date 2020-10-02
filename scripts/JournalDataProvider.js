@@ -3,6 +3,9 @@ import {JournalWriter} from './CurrentEntry.js'
 // Hold entries after they are retrieved and sorted into new array
 let journal = []
 
+// Hold moods after they are retrieved and sorted into a new array
+let moods = []
+
 const eventHub = document.querySelector("main")
 
 // Notify JournalEntryList.js that a new entry has been recorded
@@ -80,4 +83,20 @@ export const deleteEntry = entryID => {
         method: "DELETE"
     })
     .then(dispatchStateChangeEvent)
+}
+
+
+// Get all moods to be rendered in filter bar
+export const getMoods = () => {
+    return fetch("http://localhost:8088/moods")
+        .then(response => response.json())  
+        .then(pulledMoods => {
+            moods = pulledMoods
+        })
+}
+
+
+// Sort moods into new array
+export const useMoods = () => {
+    return moods.slice()
 }

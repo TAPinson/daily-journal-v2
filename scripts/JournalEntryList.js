@@ -48,3 +48,19 @@ export const EntryListComponent = () => {
         entryLog.innerHTML += entries.join("")
     })
 }
+
+// Render the list of historical entries for selected Mood
+export const EntryListComponentByMood = (entries) => {
+    const renderEntries = entries.map((entry)=> {
+        return `
+            <div class="historical-entry" id="${entry.id}">
+                ${entry.date}
+                <p></p>
+                ${entry.concept}
+            </div>
+            `
+        })
+        entryLog.innerHTML = ""
+        entryLog.innerHTML += renderEntries.join("")
+
+}

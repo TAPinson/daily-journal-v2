@@ -90,6 +90,13 @@
       "entry": "Today we started with a basic explanation of React, getting a React environment setup, and began the kennels application. I think learning React is gonna be AWESOME!!!!!!",
       "moodId": 1,
       "id": 14
+    },
+    {
+      "id": 15,
+      "date": "2020-10-03",
+      "concept": "SAD TEST!!!!!!!",
+      "entry": "Testing Filtering by Sad Mood",
+      "moodId": 3
     }
   ],
   "moods": [

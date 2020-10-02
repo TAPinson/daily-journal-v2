@@ -7,7 +7,6 @@ export const FilterBar = () => {
     getMoods()
     .then(() => {
         const allMoods = useMoods()
-        console.log(allMoods)
         render(allMoods)
     })
 }

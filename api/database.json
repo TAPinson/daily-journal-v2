@@ -83,6 +83,13 @@
       "entry": "During lab time today, I completed a task that was to create a variety of functions using different array methods to give an expected return. I completed the assignment and the advanced challenge without having to use any 'for' loops in the process!",
       "moodId": 1,
       "id": 13
+    },
+    {
+      "date": "2020-10-02",
+      "concept": "React",
+      "entry": "Today we started with a basic explanation of React, getting a React environment setup, and began the kennels application. I think learning React is gonna be AWESOME!!!!!!",
+      "moodId": 1,
+      "id": 14
     }
   ],
   "moods": [

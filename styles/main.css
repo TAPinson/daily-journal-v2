@@ -141,6 +141,15 @@ body {
     margin-bottom: 1em;
 }
 
+.filters {
+    float: right;
+    margin-top: 2em;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+
+}
+
 footer {
     margin-top: 5%;
     text-align: center;

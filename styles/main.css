@@ -8,6 +8,7 @@ h1, h2 {
 
 body {
     background-color: cyan;
+    font-family: 'Special Elite', cursive;
 }
 
 .journal-area {
@@ -34,28 +35,28 @@ body {
 }
 
 .viewer__date {
-    background-color: #527a7a;
+    background-color: #5d8888;
     padding: 2%;
     max-width: 40%;
     margin: 1%;
 }
 
 .viewer__concepts {
-    background-color: #527a7a;
+    background-color: #5d8888;
     padding: 2%;
     max-width: 90%;
     margin: 1%;
 }
 
 .viewer__journal {
-    background-color: #527a7a;
+    background-color: #5d8888;
     padding: 2%;
     max-width: 90%;
     margin: 1%;
 }
 
 .viewer__mood {
-    background-color: #527a7a;
+    background-color: #5d8888;
     padding: 2%;
     max-width: 40%;
     margin: 1%;
@@ -107,6 +108,7 @@ body {
     padding: 2%;
     margin-bottom: 1%;
     background-color: #66ffcc;
+    cursor: pointer;
 }
 
 #radioMoodSelect {
@@ -144,4 +146,11 @@ body {
 footer {
     margin-top: 5%;
     text-align: center;
+}
+
+.filters {
+    margin-top: 1em;
+    margin-right: 4em;
+    float: right;
+    width: 20%;
 }
